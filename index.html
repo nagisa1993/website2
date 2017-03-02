@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html ng-app="MyApp">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- angular-material -->	
+	<link rel="stylesheet" href="node_modules/angular-material/angular-material.css" type="text/css">
+
+	<!-- font-awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- google icon -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<!-- customized css -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<title>Website for my project</title>
+	<base href="/">
+</head>
+<body ng-controller="MainCtrl">
+	<!-- personal description -->
+	<div layout="row" layout-xs="column" id="top">
+		<div flex="30" flex-xs="100" md-colors="{background: 'deep-orange-300'}" class="flex">
+		    <img src="img/Haiyue.jpg" class="img_style"/>
+		</div>
+		<div flex="70" flex-xs="100" md-colors="{background: 'deep-orange-500'}" class="flex">
+			<h1>Haiyue Ma</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			<div layout="row" layout-align="center center" class="contact">
+				<i class="fa fa-github" href="https://github.com/nagisa1993" target="_blank"><md-tooltip md-direction="top">Find me on Github!</md-tooltip></i>
+				<i class="fa fa-linkedin"><md-tooltip md-direction="top">See me on Linkedin!</md-tooltip></i>
+				<i class="fa fa-envelope"><md-tooltip md-direction="top">Email me!</md-tooltip></i>
+				<i class="fa fa-file-text"><md-tooltip md-direction="top">Resume? OK!</md-tooltip></i>
+			</div>
+			
+		</div>
+	</div>
+
+	<!-- project1 -->
+	<div layout="row" layout-xs="column" md-colors="{background: 'amber-500'}" class="flex">
+		<div flex="60" flex-xs="100">
+		 	<h2>VITPLA</h2>
+		 	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		</div>
+		<div flex="40" flex-xs="100" ng-click="clk1=!clk1">
+			<md-tooltip md-direction="top" md-delay="300">Click me to see more!</md-tooltip>
+			<img src="img/test_img.jpg"/>
+		</div>
+	</div>
+	<!-- project1-detail -->
+	<div ng-hide="clk1" md-colors="{background: 'amber-50'}" class="flex">
+		<div>skills, members</div>
+	</div>
+
+	<!-- project2 -->
+	<div layout="row" layout-xs="column" md-colors="{background: 'cyan-500'}" class="flex">
+		<div flex="40" flex-xs="100" ng-click="clk2=!clk2">
+			<md-tooltip md-direction="top" md-delay="300">Click me to see more!</md-tooltip>
+			<img src="img/test_img.jpg"/>
+		</div>
+		<div flex="60" flex-xs="100">
+			<h2>Crowd++</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		</div>
+	</div>
+	<!-- project2-detail -->
+	<div ng-hide="clk2" md-colors="{background: 'cyan-50'}" class="flex">
+		<div>skills, members</div>
+	</div>
+
+	<!-- project3 -->
+	<div layout="row" layout-xs="column" md-colors="{background: 'light-green-500'}" class="flex">
+		<div flex="60" flex-xs="100">
+			<h2>Traffic Monitoring</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		</div>
+		<div flex="40" flex-xs="100" ng-click="clk3=!clk3">
+			<md-tooltip md-direction="top" md-delay="300">Click me to see more!</md-tooltip>
+			<img src="img/test_img.jpg"/>
+		</div>
+	</div>
+	<!-- project3-detail -->
+	<div ng-hide="clk3" md-colors="{background: 'light-green-50'}" class="flex">
+		<div>skills, members</div>
+	</div>
+
+	<!-- project4 -->
+	<div layout="row" layout-xs="column" md-colors="{background: 'deep-purple-500'}" class="flex">
+		<div flex="40" flex-xs="100" ng-click="clk4=!clk4">
+			<md-tooltip md-direction="top" md-delay="300">Click me to see more!</md-tooltip>
+			<img src="img/test_img.jpg"/>
+		</div>
+		<div flex="60" flex-xs="100">
+			<h2>Stock Prediction</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		</div>
+	</div>
+	<!-- project4-detail -->
+	<div ng-hide="clk4" md-colors="{background: 'deep-purple-50'}" class="flex">
+		<div>skills, members</div>
+	</div>
+
+	<!-- project5 -->
+	<div layout="row" layout-xs="column" md-colors="{background: 'light-blue-500'}" class="flex">
+		<div flex="60" flex-xs="100">
+			<h2>RU Pacer</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		</div>
+		<div flex="40" flex-xs="100" ng-click="clk5=!clk5">
+			<md-tooltip md-direction="top" md-delay="300">Click me to see more!</md-tooltip>
+			<img src="img/test_img.jpg"/>
+		</div>
+	</div>
+	<!-- project5-detail -->
+	<div ng-hide="clk5" md-colors="{background: 'light-blue-50'}" class="flex">
+		<div>skills, members</div>
+	</div>
+	
+	<div ng-show="topbtn" class="outer">
+		<md-button class="md-fab" scrollwatch ng-click="gotoTop()" aria-label="Go Top" md-colors="{background: 'pink-A100'}" md-ink-ripple="#E91E63">
+			<md-tooltip md-direction="top" md-delay="300">Click me to go to top!</md-tooltip>
+            <i class="material-icons">arrow_upward</i>
+        </md-button>
+	</div>
+
+	<!-- angular -->
+	<script src="node_modules/angular/angular.js"></script>
+	<script src="node_modules/angular-route/angular-route.js"></script>
+	<script scr="node_modules/angular-resource/angular-resource.js"></script>
+
+	<!-- angular-material -->
+	<script src="node_modules/angular-material/angular-material.js"></script>
+	<script src="node_modules/angular-aria/angular-aria.js"></script>
+	<script src="node_modules/angular-messages/angular-messages.js"></script>
+    <script src="node_modules/angular-animate/angular-animate.js"></script>  
+
+    <!-- customized js -->
+	<script src="scripts/app.js"></script>
+</body>
+</html>
